@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #fff;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+hr{
+    border: 5px solid rgb(35,35,35);
+}
+img{
+    max-width: 100%;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+
+}
+
+header a.logo{
+    display: block;
+}
+header a.logo svg{
+    height: 37px;
+    fill: red;
+    margin-left: 100px;
+}
+.second{
+    text-align: right;
+    margin-right: 100px;
+}
+
+header a.button {
+    display: inline-block;
+    background-color: red;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+}
+header select{
+    
+    padding: 6px 0 6px 20px;
+    background: transparent;
+    color: #fff;
+    border-radius: 3px;
+    letter-spacing: .5px;
+}
+header .select svg{
+  
+    position: absolute;
+    height: 20px;
+    fill: #fff;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.splash{
+    position: relative;
+}
+
+.splash .backgroundImage img{
+    max-width: 100%;
+    opacity: .6;
+}
+ .gradient{
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.splash .text{
+    /* max-width: 655px;  */
+     margin:auto;
+    position: absolute;
+    inset: 0;
+   display: grid;
+    align-items: center;
+   text-align: center;
+   margin: 95px 0;
+}
+
+.splash .text h1{
+    margin: 0;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.splash .text h2{
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.splash .text h3{
+    margin: 0;
+    font-size: 1.45rem;
+    margin: 20px 0;
+    font-weight: 400;
+    line-height: 1.6875rem;
+
+}
+.cta  form {
+    margin: auto;
+    width: 655px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-top: 40px;
+    position: relative;
+}
+.cta input{
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+.cta span{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    color: #aaa;
+    z-index: 3;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+.cta input:focus ~ span{
+    top: 3px;
+    font-size: .8rem;
+   
+}
+.cta input:focus{
+    margin-bottom: 1px;
+}
+.cta button{
+    background-color:rgb(229, 9, 20);
+    padding: 14px;
+    border: 3px;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 72px 40px;
+    gap: 40px;
+}
+/* section .even{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 72px 40px;
+    gap: 40px;
+} */
+section .texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+section .texts p{
+    margin-top: 5px;
+    font-size: 1.625rem;
+}
+.media{
+    position: relative;
+}
+.media img{
+   
+    /* width: 100%; */
+}
+ .s1 video{
+    z-index: -1; 
+    overflow: hidden;
+    
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    /* transform: translate(-50%, -50%); */
+}
+
+.s2 div.download{
+    border: 2px solid rgba(128,128,128,0.7);
+    position: absolute;
+    left: 20%;
+    bottom: 8%;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    width: 25rem;
+    padding: 10px;
+    border-radius: 15px;
+    background: black;
+    
+   
+}
+.download img{
+    height: 60px;
+ 
+    width: fit-content;
+}
+.download div{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.download .span{
+    font-size: small;
+    color: blue;
+}
+.s3.media video{
+    z-index: -1;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+.faq{
+    padding: 72px 30px;
+}
+.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+}
+.faq .questions{
+   max-width: 900px;
+   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+   
+}
+.faq .question{
+    position: relative;
+    background-color: #303030;
+    
+}
+.faq input[type="checkbox"]{
+    display: none;
+}
+.faq svg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+}
+.faq .header{
+    padding: 20px 30px;
+    display: block;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    font-size: 1.625rem;
+    
+}
+.faq .answer{
+    padding:0 30px;
+    max-height: 0;
+     /* overflow: hidden; */
+     font-size: 1.125rem;
+     transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1)
+} 
+.faq input[type="checkbox"]:checked ~ .answer{
+    max-height: 75rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1)
+}
+ .faq .c{
+    font-size: 1.5rem;
+    
+    margin-left: 20rem;
+    margin-top: 2.5rem;
+} 
